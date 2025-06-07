@@ -55,20 +55,20 @@ const App = () => {
       <div className="max-w-7xl mx-auto">
          {/* Professional Header */}
         <div className="text-center mb-12">
-          <div className="mb-6">
+          <div className="">
             <p className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">
               Premium Skip Hire
             </p>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-white ">
               Select Your Skip Size
             </h1>
-            <div className="w-16 h-1 bg-blue-500 mx-auto"></div>
           </div>
-          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-300 max-w-2xl mx-auto text-sm mt-2">
             Choose from our premium range of skip sizes. All prices include VAT and standard 14-day hire period.
           </p>
         </div>
-        <div className=" left-6 my-5">
+            <div className="w-4xl h-0.5 bg-blue-500 mx-auto"></div>
+          <div className=" left-6 my-5">
         <button
         onClick={() => window.history.back()}
           className=" text-white px-4 py-2 hover:text-blue-400 cursor-pointer  text-sm font-medium"
@@ -76,6 +76,7 @@ const App = () => {
          ← Previous Page
         </button>
          </div>
+      
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {skipsData.map((skip) => (
